@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        style="@style/ContactCard"
+        >
+        <TextView
+            android:id="@+id/tvChatHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="9:20 AM"
+            android:textSize="12sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="9dp">
+
+            <View
+                android:id="@+id/vChatState"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle"
+                android:visibility="invisible"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivChatImage"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/round_img"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tvChatNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:text="Jackelin Ritchie"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    />
+                <TextView
+                    android:id="@+id/tvChatMensaje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="It seems a bit of scary to me, but I'll try my best, that's for sure!"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_gravity="bottom"
+            />
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
