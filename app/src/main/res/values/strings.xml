@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Guia5</string>
+    <string name="label_conversation">Conversación</string>
+    <string name="label_login">Login</string>
+    <string name="label_calculator">Calculadora</string>
+    <string name="my_name">Mario Adalberto Rivera Olivo</string>
+    <string name="my_code">RO16-I04-001</string>
+</resources>
